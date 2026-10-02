@@ -265,6 +265,8 @@ ggplot(position_counts, aes(x = reorder(PositionGrp, -n), y = n)) +
 
 ```{r hist-1}
 # TODO: Basic histogram
+ggplot(NFL, aes(x = Weight)) +
+  geom_histogram()
 ```
 
 ### Histogram with Fill using `PositionGrp` OR `Side`
@@ -273,25 +275,33 @@ Choose ONE: `fill = PositionGrp` or `fill = Side`
 
 ```{r hist-2}
 # TODO: Add fill
+ggplot(NFL, aes(x = Weight, fill = PositionGrp)) +
+  geom_histogram()
 ```
 
 ### Histogram using `facet_wrap()` with `PositionGrp`
 
 ```{r hist-3}
 # TODO: facet_wrap by PositionGrp
+ggplot(NFL, aes(x = Weight)) +
+  geom_histogram() +
+  facet_wrap(~PositionGrp)
 ```
 
 ### Histogram using `facet_grid()` with `Side`
 
 ```{r hist-4}
 # TODO: facet_grid by Side
+ggplot(NFL, aes(x = Weight)) +
+  geom_histogram() +
+  facet_wrap(~Side)
 ```
 
 ### Quick interpretation (2–3 sentences)
 
 Pick one faceted plot and write what pattern you notice.
-
 **Answer:**
+The pattern I see with the facet_wrap(Side) is that the it correlates with facet_wrap(PositionGrp) as you can see the spikes of positions and their weights. As well as seeing the pattern in the wight of the players in correlation to their position you can see the same pattern from earlier that the majority to least number of players is offense to defense and then to special teams. 
 
 ---
 
