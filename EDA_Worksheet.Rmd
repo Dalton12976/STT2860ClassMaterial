@@ -127,6 +127,7 @@ NFL <- read_csv("https://aokine.github.io/Data/NFLplayers2016.csv")
 
 ```{r nfl-skim}
 # Use skim()
+skim(NFL)
 ```
 
 ---
@@ -141,6 +142,8 @@ Use `x = PositionGrp`.
 
 ```{r bar-1}
 # TODO: Create barplot of PositionGrp
+ggplot(NFL, aes(x = PositionGrp)) +
+  geom_bar()
 ```
 
 ### Choose-your-own mini task (pick ONE)
@@ -151,9 +154,10 @@ Use `x = PositionGrp`.
 
 ```{r bar-1-choice}
 # Do ONE of the three options above. Add your code here.
-
+ggplot(NFL, aes(x = PositionGrp)) +
+  geom_bar() +
+  coord_flip()
 ```
-
 ---
 
 ## Fixing category names: Map `PositionGrp` to the y aesthetic
@@ -162,8 +166,9 @@ Make `PositionGrp` go on the **y-axis** so labels are easier to read.
 
 ```{r bar-2}
 # TODO: Make horizontal barplot
+ggplot(NFL, aes(y = PositionGrp)) +
+  geom_bar()
 ```
-
 ---
 
 ## Barplot for Two Variables
@@ -172,13 +177,17 @@ Use `PositionGrp` and `Side` as the two variables. Use color/fill to separate gr
 
 ```{r bar-3}
 # TODO: Add fill = Side
+ggplot(NFL, aes(y = PositionGrp, fill = Side)) +
+  geom_bar()
 ```
 
 ### Quick interpretation (1–2 sentences)
 
 In plain language, what does this plot suggest about how offense/defense/special teams are distributed across position groups?
-
 **Answer:**
+Offense's are spread put based on position groups while defense has a high count of players in less categories than offense. Special teams was limited to one category and had the least amount of players. 
+
+
 
 ---
 
