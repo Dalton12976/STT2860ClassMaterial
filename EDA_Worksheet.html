@@ -388,7 +388,7 @@ display: none;
 <h3 class="subtitle">STT 2860 Intro to Data Mgmt &amp;
 Visualization</h3>
 <h4 class="author">Dalton Littleton</h4>
-<h4 class="date">Friday, October 02, 2026 @ 06:49 PM</h4>
+<h4 class="date">Friday, October 02, 2026 @ 06:59 PM</h4>
 
 </div>
 
@@ -1396,10 +1396,24 @@ players is offense to defense and then to special teams.</p>
 <h1>Reflection (Individual)</h1>
 <p>Fill these in before you submit.</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>One thing I learned today:</strong></p></li>
+<li><p><strong>One thing I learned today:</strong> I learned how to use
+Github with RStudio and how to use commit and push commands. First I
+have to knit the R Markdown to an HTML then press the Git button in the
+Git panel and make sure that both .Rmd and .html are visible. Then check
+the boxes of both the .Rmd and .html and press commit. Enter the
+“worksheet-eda:…” and press commit again on the pop up. Back at the Git
+panel in RStudio press “push” and verify on Github that it was done
+successfully.</p></li>
 <li><p><strong>One thing that confused me at first but makes sense
-now:</strong></p></li>
-<li><p><strong>One ggplot trick I want to remember:</strong></p></li>
+now:</strong> The thing that confused me the most, but makes sense now,
+was linking my work to Github from RStudio. I now know the steps used
+with commit and push to send my work to Github successfully.</p></li>
+<li><p><strong>One ggplot trick I want to remember:</strong> One plot
+trick I want to remember is that “ggplot” is first then the “geom_” code
+follows and to make sure after each line of code when creating a
+“ggplot” to add the plus sign. Therefore, the code is connected to each
+other. Also to remember when to use “%&gt;%” also known as the pipe
+operator to connect functions.</p></li>
 <li><p><strong>Choose-your-own reflection (pick ONE):</strong></p></li>
 </ol>
 <ul>
@@ -1407,8 +1421,13 @@ now:</strong></p></li>
 <li>B. One plot I would redesign and how</li>
 <li>C. One dataset question I’d investigate next</li>
 </ul>
-<p><strong>Answer:</strong></p>
-<hr />
+<p><strong>Answer:</strong> One plot I’m proud of is ggplot(NFL, aes(x =
+Weight, fill = PositionGrp)) + geom_histogram() because the histogram
+shows clear clarification of the position groups as a whole in regards
+to their weight. The graph itself looks as if the two different
+face_wrap graphs were combined together. This histogram eliminates the
+need for the facet_wraps unless you were to need the individual data of
+either facet_wrap(~PositionGrp) or facet_wrap(~Side). —</p>
 <div id="final-submission" class="section level2">
 <h2>Final Submission</h2>
 <p><strong>Final task:</strong> Knit one last time. Then <strong>commit

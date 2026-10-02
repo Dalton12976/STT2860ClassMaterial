@@ -318,10 +318,13 @@ The pattern I see with the facet_wrap(Side) is that the it correlates with facet
 Fill these in before you submit.
 
 1. **One thing I learned today:**
+I learned how to use Github with RStudio and how to use commit and push commands. First I have to knit the R Markdown to an HTML then press the Git button in the Git panel and make sure that both .Rmd and .html are visible. Then check the boxes of both the .Rmd and .html and press commit. Enter the “worksheet-eda:...” and press commit again on the pop up. Back at the Git panel in RStudio press “push” and verify on Github that it was done successfully. 
 
 2. **One thing that confused me at first but makes sense now:**
+The thing that confused me the most, but makes sense now, was linking my work to Github from RStudio. I now know the steps used with commit and push to send my work to Github successfully. 
 
 3. **One ggplot trick I want to remember:**
+One plot trick I want to remember is that “ggplot” is first then the “geom_” code follows and to make sure after each line of code when creating a “ggplot” to add the plus sign. Therefore, the code is connected to each other. Also to remember when to use “%>%” also known as the pipe operator to connect functions. 
 
 4. **Choose-your-own reflection (pick ONE):**
 
@@ -330,7 +333,7 @@ Fill these in before you submit.
 * C. One dataset question I’d investigate next
 
 **Answer:**
-
+One plot I'm proud of is ggplot(NFL, aes(x = Weight, fill = PositionGrp)) + geom_histogram() because the histogram shows clear clarification of the position groups as a whole in regards to their weight. The graph itself looks as if the two different face_wrap graphs were combined together. This histogram eliminates the need for the facet_wraps unless you were to need the individual data of either facet_wrap(~PositionGrp) or facet_wrap(~Side).
 ---
 
 ## Final Submission
